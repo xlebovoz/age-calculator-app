@@ -1,0 +1,123 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* центр по горизонтали */
+  align-items: center;     /* центр по вертикали */
+  background-color: hsl(0, 0%, 94%);
+  font-family: 'Poppins', sans-serif;
+}
+
+#main {
+  position: relative;
+  background-color: hsl(0, 100%, 100%);
+  width: 800px;
+  height: 600px;
+  border-radius: 20px;
+  border-bottom-right-radius: 150px;
+  padding: 30px;
+}
+
+.container {
+  display: flex;           /* Располагает input-group в ряд */
+  gap: 40px;               /* Отступы между группами */
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;  /* Подпись сверху, инпут снизу */
+  align-items: left;     /* Центрирует подпись и инпут по горизонтали */
+}
+
+.input-group p {
+  margin: 0 0 5px 0;       /* Отступ снизу у подписи */
+  font-weight: 400;
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+}
+
+.input-group input {
+  width: 150px;             /* Ширина инпута */
+  height: 50px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: left;      /* Текст по центру */
+  font-size: 32px;
+  /* базовая рамка и скругления */
+  border: 2px solid hsl(0, 0%, 86%);
+  border-radius: 4px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input-group input:hover {
+  border-color: hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+
+#years {
+    font-size: 100px;
+    margin-bottom: -5px;
+    margin-top: -20px;
+}
+
+#months {
+    font-size: 100px;
+    margin-bottom: -5px;
+    margin-top: 0;
+}
+
+#days {
+    font-size: 100px;
+    margin-bottom: -5px;
+    margin-top: 0;
+}
+
+#arrow {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(259, 100%, 65%);
+  margin-left: auto; /* прижать вправо */
+  margin-top: -35px; /* сдвинуть вверх на половину высоты */
+  transition: background-color 0.2s ease-in-out;
+}
+#arrow:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+
+hr {
+  position: relative;
+  z-index: 0;
+  border: none;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  margin: 0;
+  padding: 0;
+  height: 1px;
+}
+
+#er_days {
+    color: hsl(0, 100%, 67%);
+    display: none;
+}
+
+#er_months {
+    color: hsl(0, 100%, 67%);
+    display: none;
+}
+
+#er_years {
+    color: hsl(0, 100%, 67%);
+    display: none;
+} 

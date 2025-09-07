@@ -3,26 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
   <title>Frontend Mentor | Age calculator app</title>
 
 </head>
 <body>
+  <div id="main">
+    <div class="container">
+      <div class="input-group">
+        <p>Day</p>
+        <input placeholder="DD" type="text" maxlength="2">
+        <p id="er_days">frfrfrfrf</p>
+      </div>
 
-  Day
-  DD
+      <div class="input-group">
+        <p>Month</p>
+        <input placeholder="MM" type="text" maxlength="2">
+        <p id="er_months">fffffff</p>
+      </div>
 
-  Month
-  MM
+      <div class="input-group">
+        <p>Year</p>
+        <input placeholder="YYYY" type="text" maxlength="4">
+        <p id="er_years">fff</p>
+      </div>
+    </div>
 
-  Year
-  YYYY
+    <hr>
+    <div id="arrow">
+      <img src="assets/images/icon-arrow.svg" alt="arrow">
+    </div>
 
-  -- years
-  -- months
-  -- days
+    <h1 id="years"><i><span style="color: hsl(259, 100%, 65%);">--</span> years</i></h1>
+    <h1 id="months"><i><span style="color: hsl(259, 100%, 65%);">--</span> months</i></h1>
+    <h1 id="days"><i><span style="color: hsl(259, 100%, 65%);">--</span> days</i></h1>
 
+  </div>
 </body>
 </html>
