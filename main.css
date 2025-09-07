@@ -120,4 +120,10 @@ hr {
 #er_years {
     color: hsl(0, 100%, 67%);
     display: none;
-} 
+}
+
+
+.purple {
+  color: hsl(259, 100%, 65%);
+  font-style: italic;
+}
